@@ -1,9 +1,9 @@
-import 'package:covid_tracker/models/case_model.dart';
+// import 'package:covid_tracker/models/case_model.dart';
 import 'package:covid_tracker/models/general_data_model.dart';
-import 'package:covid_tracker/models/news_model.dart';
+// import 'package:covid_tracker/models/news_model.dart';
 import 'package:covid_tracker/models/other_case_model.dart';
 import 'package:covid_tracker/repositories/api_client.dart';
-import 'package:dio/dio.dart';
+// import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

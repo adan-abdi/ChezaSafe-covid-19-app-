@@ -1,8 +1,7 @@
-import 'dart:convert';
-
-import 'package:covid_tracker/models/case_model.dart';
+// import 'dart:convert';
+// import 'package:covid_tracker/models/case_model.dart';
 import 'package:covid_tracker/models/general_data_model.dart';
-import 'package:covid_tracker/models/news_model.dart';
+// import 'package:covid_tracker/models/news_model.dart';
 import 'package:covid_tracker/models/other_case_model.dart';
 import 'package:dio/dio.dart';
 import 'package:http/http.dart' as http;

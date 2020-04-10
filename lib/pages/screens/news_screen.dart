@@ -2,16 +2,16 @@ import 'dart:async';
 import 'package:covid_tracker/blocs/blocs.dart';
 import 'package:covid_tracker/models/ncovid_data.dart';
 import 'package:covid_tracker/models/serializers.dart';
-import 'package:covid_tracker/pages/widgets/global_card.dart';
+// import 'package:covid_tracker/pages/widgets/global_card.dart';
 import 'package:covid_tracker/pages/widgets/news_card.dart';
 import 'package:covid_tracker/theme/color/light_color.dart';
-import 'package:covid_tracker/utils/calculateGrowth.dart';
+// import 'package:covid_tracker/utils/calculateGrowth.dart';
 import 'package:covid_tracker/utils/margin.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:responsive_screen/responsive_screen.dart';
-import 'package:shimmer/shimmer.dart';
+// import 'package:shimmer/shimmer.dart';
 
 class NewsPage extends StatefulWidget {
   @override
@@ -34,7 +34,8 @@ class _NewsPageState extends State<NewsPage>
 
     final Function wp = Screen(context).wp;
     final Function hp = Screen(context).hp;
-    return SingleChildScrollView(child: BlocBuilder<NewsBloc, NewsState>(
+    return SingleChildScrollView(
+      child: BlocBuilder<NewsBloc, NewsState>(
         builder: (BuildContext context, NewsState state) {
       if (state is NewsLoaded) {
         return Container(
