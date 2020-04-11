@@ -31,7 +31,7 @@ The [www.cdc.gov](https://www.cdc.gov) was used to provide the guides.
 <img src="screenshots/ss4.png" width="300" style="border-radius: 15px"> -->
 <!-- </div> -->
 
-<!-- ## 🔌 Plugins
+## 🔌 Plugins
 
 |                           Name                            |      Usage       |
 | :-------------------------------------------------------: | :--------------: |
@@ -39,7 +39,7 @@ The [www.cdc.gov](https://www.cdc.gov) was used to provide the guides.
 |          [**DIO**](https://pub.dev/packages/dio)          |  Network calls   |
 |  [**WebView**](https://pub.dev/packages/webview_flutter)  |  InApp WebView   |
 
- -->
+
 
 <!-- This is a mobile app created using Flutter, corona.lmao.ninja (Real Time News about Covid 19).
 There are some test files that needed to be completed, but anyone is interested they can help me to finish these test files as well.

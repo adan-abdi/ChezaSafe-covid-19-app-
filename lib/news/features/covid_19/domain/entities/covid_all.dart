@@ -6,7 +6,6 @@ class CovidAll extends Equatable {
   int _deaths;
   int _recovered;
 
-
   CovidAll({
     @required int cases,
     @required int deaths,
