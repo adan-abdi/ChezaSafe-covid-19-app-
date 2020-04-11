@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 class ApiInterceptor extends Interceptor {
   @override
   Future<dynamic> onRequest(RequestOptions options) async {
-    final String token = 'e4511a20-f308-30f2-ab82-b0a389aac869';
+    // final String token = 'e4511a20-f308-30f2-ab82-b0a389aac869';
     print(
         "--> ${options.method != null ? options.method.toUpperCase() : 'METHOD'} ${"" + (options.baseUrl ?? "") + (options.path ?? "")}");
     print("Headers:");
