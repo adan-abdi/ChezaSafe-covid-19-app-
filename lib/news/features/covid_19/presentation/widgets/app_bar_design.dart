@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../constants/theme_data.dart';
 
 class AppBarDesign extends StatelessWidget implements PreferredSizeWidget {
-
   static final AppBar appBar = new AppBar();
 
   const AppBarDesign({
@@ -23,14 +22,12 @@ class AppBarDesign extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       backgroundColor: Colors.white,
-      bottomOpacity: 0.0,
-      elevation: 0.0,
+      // bottomOpacity: 0.0,
+      elevation: 5.0,
       iconTheme: new IconThemeData(color: Theme.of(context).primaryColor),
     );
   }
 
   @override
   Size get preferredSize => new Size.fromHeight(appBar.preferredSize.height);
-
 }
-

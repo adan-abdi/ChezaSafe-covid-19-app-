@@ -4,13 +4,15 @@ import '../../domain/entities/covid_country.dart';
 
 class LoadedCovidSLStateDisplayNew extends StatelessWidget {
   final CovidCountry covidSL;
+  final double cardwidth = 150;
 
   LoadedCovidSLStateDisplayNew({@required this.covidSL});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height / 3.5,
+      height: MediaQuery.of(context).size.height / 4,
+      // width: MediaQuery.of(context).size.height / 4,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
@@ -18,9 +20,9 @@ class LoadedCovidSLStateDisplayNew extends StatelessWidget {
             children: <Widget>[
               Container(
                 height: MediaQuery.of(context).size.height / 3.5,
-                width: MediaQuery.of(context).size.height / 3.5,
+                width: cardwidth,
                 child: Card(
-                  color: Colors.blueGrey,
+                  color: Colors.red,
                   margin: EdgeInsets.all(5),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
@@ -69,9 +71,9 @@ class LoadedCovidSLStateDisplayNew extends StatelessWidget {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3.5,
-                width: MediaQuery.of(context).size.height / 3.5,
+                width: cardwidth,
                 child: Card(
-                  color: Colors.blueAccent,
+                  color: Color(0xff001399),
                   margin: EdgeInsets.all(5),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
@@ -120,9 +122,9 @@ class LoadedCovidSLStateDisplayNew extends StatelessWidget {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3.5,
-                width: MediaQuery.of(context).size.height / 3.5,
+                width: cardwidth,
                 child: Card(
-                  color: Colors.redAccent,
+                  color: Colors.red,
                   margin: EdgeInsets.all(5),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
@@ -171,9 +173,9 @@ class LoadedCovidSLStateDisplayNew extends StatelessWidget {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3.5,
-                width: MediaQuery.of(context).size.height / 3.5,
+                width: cardwidth,
                 child: Card(
-                  color: Colors.red,
+                  color: Color(0xff001399),
                   margin: EdgeInsets.all(5),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
@@ -222,7 +224,7 @@ class LoadedCovidSLStateDisplayNew extends StatelessWidget {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3.5,
-                width: MediaQuery.of(context).size.height / 3.5,
+                width: cardwidth,
                 child: Card(
                   color: Colors.green,
                   margin: EdgeInsets.all(5),
@@ -273,7 +275,7 @@ class LoadedCovidSLStateDisplayNew extends StatelessWidget {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3.5,
-                width: MediaQuery.of(context).size.height / 3.5,
+                width: cardwidth,
                 child: Card(
                   color: Colors.orange,
                   margin: EdgeInsets.all(5),
@@ -324,9 +326,9 @@ class LoadedCovidSLStateDisplayNew extends StatelessWidget {
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3.5,
-                width: MediaQuery.of(context).size.height / 3.5,
+                width: cardwidth,
                 child: Card(
-                  color: Colors.deepPurpleAccent,
+                  color: Colors.deepOrange,
                   margin: EdgeInsets.all(5),
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10))),
@@ -424,7 +426,6 @@ class LoadedCovidSLStateDisplayNew extends StatelessWidget {
                   ),
                 ),
               ),
-            
             ],
           )
         ],

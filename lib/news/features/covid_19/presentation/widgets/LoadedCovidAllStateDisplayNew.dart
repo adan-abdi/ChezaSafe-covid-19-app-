@@ -20,238 +20,271 @@ class LoadedCovidAllStateDisplayNew extends StatelessWidget {
         children: <Widget>[
           Column(
             children: <Widget>[
-              WorldTotalCard(),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Container(
-                  height: MediaQuery.of(context).size.height / 3.7,
-                  width: wid,
-                  child: Card(
-                    color: Colors.blueGrey,
-                    margin: EdgeInsets.all(5),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            'Total'.toUpperCase(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            'Cases'.toUpperCase(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 10,
-                              bottom: 5,
-                            ),
-                          ),
-                          Text(
-                            this.covidAll.getCases.toString(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Container(
-                  height: MediaQuery.of(context).size.height / 3.7,
-                  width: wid,
-                  child: Card(
-                    color: Colors.red,
-                    margin: EdgeInsets.all(5),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            'Total'.toUpperCase(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            'Deaths'.toUpperCase(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 10,
-                              bottom: 5,
-                            ),
-                          ),
-                          Text(
-                            this.covidAll.getDeaths.toString(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Container(
-                  height: MediaQuery.of(context).size.height / 3.7,
-                  width: wid,
-                  child: Card(
-                    color: Colors.green,
-                    margin: EdgeInsets.all(5),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            'Total'.toUpperCase(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            'Recovered'.toUpperCase(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 10,
-                              bottom: 5,
-                            ),
-                          ),
-                          Text(
-                            this.covidAll.getRecovered.toString(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Container(
-                  height: MediaQuery.of(context).size.height / 3.7,
-                  width: wid,
-                  child: Card(
-                    color: Colors.orange,
-                    margin: EdgeInsets.all(5),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            'Active'.toUpperCase(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Text(
-                            'Cases'.toUpperCase(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 15,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              top: 10,
-                              bottom: 5,
-                            ),
-                          ),
-                          Text(
-                            (this.covidAll.getCases -
-                                    this.covidAll.getDeaths -
-                                    this.covidAll.getRecovered)
-                                .toString(),
-                            style: TextStyle(
-                              color: Colors.white,
-                              letterSpacing: 2,
-                              fontSize: 25,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
+              worldTotalCard(
+                  "Total",
+                  "Global cases",
+                  this.covidAll.getCases.toString(),
+                  Colors.red,
+                  Colors.redAccent,
+                  Icons.arrow_upward),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 20),
+              //   child: Container(
+              //     height: MediaQuery.of(context).size.height / 3.7,
+              //     width: wid,
+              //     child: Card(
+              //       color: Colors.blueGrey,
+              //       margin: EdgeInsets.all(5),
+              //       shape: RoundedRectangleBorder(
+              //           borderRadius: BorderRadius.all(Radius.circular(10))),
+              //       child: Center(
+              //         child: Column(
+              //           mainAxisAlignment: MainAxisAlignment.center,
+              //           crossAxisAlignment: CrossAxisAlignment.center,
+              //           children: <Widget>[
+              //             Text(
+              //               'Total'.toUpperCase(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 15,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               'Cases'.toUpperCase(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 15,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: EdgeInsets.only(
+              //                 top: 10,
+              //                 bottom: 5,
+              //               ),
+              //             ),
+              //             Text(
+              //               this.covidAll.getCases.toString(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 25,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              worldTotalCard(
+                  "Total",
+                  "Global Deaths",
+                  this.covidAll.getDeaths.toString(),
+                  Color(0xff000080),
+                  Color(0xff001399),
+                  Icons.fastfood),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 20),
+              //   child: Container(
+              //     height: MediaQuery.of(context).size.height / 3.7,
+              //     width: wid,
+              //     child: Card(
+              //       color: Colors.red,
+              //       margin: EdgeInsets.all(5),
+              //       shape: RoundedRectangleBorder(
+              //           borderRadius: BorderRadius.all(Radius.circular(10))),
+              //       child: Center(
+              //         child: Column(
+              //           mainAxisAlignment: MainAxisAlignment.center,
+              //           crossAxisAlignment: CrossAxisAlignment.center,
+              //           children: <Widget>[
+              //             Text(
+              //               'Total'.toUpperCase(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 15,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               'Deaths'.toUpperCase(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 15,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: EdgeInsets.only(
+              //                 top: 10,
+              //                 bottom: 5,
+              //               ),
+              //             ),
+              //             Text(
+              //               this.covidAll.getDeaths.toString(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 25,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              worldTotalCard(
+                  "Total",
+                  "Global Recoveries",
+                  this.covidAll.getRecovered.toString(),
+                  Colors.green,
+                  Colors.greenAccent,
+                  Icons.timeline),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 20),
+              //   child: Container(
+              //     height: MediaQuery.of(context).size.height / 3.7,
+              //     width: wid,
+              //     child: Card(
+              //       color: Colors.green,
+              //       margin: EdgeInsets.all(5),
+              //       shape: RoundedRectangleBorder(
+              //           borderRadius: BorderRadius.all(Radius.circular(10))),
+              //       child: Center(
+              //         child: Column(
+              //           mainAxisAlignment: MainAxisAlignment.center,
+              //           crossAxisAlignment: CrossAxisAlignment.center,
+              //           children: <Widget>[
+              //             Text(
+              //               'Total'.toUpperCase(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 15,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               'Recovered'.toUpperCase(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 15,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: EdgeInsets.only(
+              //                 top: 10,
+              //                 bottom: 5,
+              //               ),
+              //             ),
+              //             Text(
+              //               this.covidAll.getRecovered.toString(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 25,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              worldTotalCard(
+                  "Total Active",
+                  "Global Cases",
+                  (this.covidAll.getCases -
+                          this.covidAll.getDeaths -
+                          this.covidAll.getRecovered)
+                      .toString(),
+                  Colors.orange,
+                  Colors.orangeAccent,
+                  Icons.business_center),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 20),
+              //   child: Container(
+              //     height: MediaQuery.of(context).size.height / 3.7,
+              //     width: wid,
+              //     child: Card(
+              //       color: Colors.orange,
+              //       margin: EdgeInsets.all(5),
+              //       shape: RoundedRectangleBorder(
+              //           borderRadius: BorderRadius.all(Radius.circular(10))),
+              //       child: Center(
+              //         child: Column(
+              //           mainAxisAlignment: MainAxisAlignment.center,
+              //           crossAxisAlignment: CrossAxisAlignment.center,
+              //           children: <Widget>[
+              //             Text(
+              //               'Active'.toUpperCase(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 15,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Text(
+              //               'Cases'.toUpperCase(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 15,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //             Padding(
+              //               padding: EdgeInsets.only(
+              //                 top: 10,
+              //                 bottom: 5,
+              //               ),
+              //             ),
+              //             Text(
+              //               (this.covidAll.getCases -
+              //                       this.covidAll.getDeaths -
+              //                       this.covidAll.getRecovered)
+              //                   .toString(),
+              //               style: TextStyle(
+              //                 color: Colors.white,
+              //                 letterSpacing: 2,
+              //                 fontSize: 25,
+              //                 fontWeight: FontWeight.bold,
+              //               ),
+              //             ),
+              //           ],
+              //         ),
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           )
         ],
       ),
     );
   }
-}
 
-
-class WorldTotalCard extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
+  Widget worldTotalCard(
+    String title,
+    String con,
+    String stat,
+    Color cardColor,
+    Color cardaccent,
+    IconData tiny,
+  ) {
     return Stack(
       children: <Widget>[
         Container(
@@ -259,11 +292,11 @@ class WorldTotalCard extends StatelessWidget {
             children: <Widget>[
               Container(
                 width: double.infinity,
-                height: MediaQuery.of(context).size.height / 3.7,
+                height: 175,
                 margin: EdgeInsets.symmetric(horizontal: 25),
                 padding: EdgeInsets.all(5),
                 decoration: BoxDecoration(
-                  color: Colors.red,
+                  color: cardColor,
                   borderRadius: BorderRadius.circular(10),
                   boxShadow: [
                     BoxShadow(
@@ -285,11 +318,11 @@ class WorldTotalCard extends StatelessWidget {
                               EdgeInsets.symmetric(vertical: 5, horizontal: 17),
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
-                              color: Colors.redAccent,
+                              color: cardaccent,
                               borderRadius: BorderRadius.circular(5)),
                           child: RichText(
                               text: TextSpan(
-                            text: "cardTitle Test ".toUpperCase(),
+                            text: title.toUpperCase(),
                             style: GoogleFonts.cabin(
                               textStyle: TextStyle(
                                   color: Colors.white,
@@ -307,7 +340,7 @@ class WorldTotalCard extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                "test number",
+                                stat,
                                 style: GoogleFonts.cabin(
                                   textStyle: TextStyle(
                                       color: Colors.white,
@@ -317,7 +350,7 @@ class WorldTotalCard extends StatelessWidget {
                               ),
                               const YMargin(5),
                               Text(
-                                 "Deaths",
+                                con,
                                 style: GoogleFonts.cabin(
                                   textStyle: TextStyle(
                                       color: Colors.white54,
@@ -361,7 +394,7 @@ class WorldTotalCard extends StatelessWidget {
                         offset: Offset(0, 13)),
                   ],
                 ),
-                child: Icon(Icons.arrow_upward, color: Colors.red, size: 15),
+                child: Icon(tiny, color: cardColor, size: 25),
               ),
             ],
           ),

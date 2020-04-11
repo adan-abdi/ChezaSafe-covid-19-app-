@@ -9,28 +9,50 @@ class InformationScreen extends StatefulWidget {
   _InformationScreenState createState() => _InformationScreenState();
 }
 
-class _InformationScreenState extends State<InformationScreen> with AutomaticKeepAliveClientMixin {
+class _InformationScreenState extends State<InformationScreen>
+    with AutomaticKeepAliveClientMixin {
   @override
   Widget build(BuildContext context) {
     super.build(context);
     // final Function wp = Screen(context).wp;
     final Function hp = Screen(context).hp;
     return Scaffold(
-    
       body: SingleChildScrollView(
-        padding: EdgeInsets.only(left: 20, right: 20, top: 10),
-        child: Column(
-          children: <Widget>[
-            InformationTitleCard(icon: LineIcons.share_alt, iconColor: CardColors.blue, subTitle: 'Learn how Covid-19 spread', title: 'How it Spreads?',),
-            SizedBox(height: hp(2)),
-            InformationTitleCard(icon: LineIcons.warning, iconColor: CardColors.cyan, subTitle: 'Learn Covid-19 symptoms', title: 'Symptoms',),
-            SizedBox(height: hp(2)),
-            InformationTitleCard(icon: LineIcons.heartbeat, iconColor: CardColors.red, subTitle: 'Learn Covid-19 treatments', title: 'Prevention & treatment',),
-            SizedBox(height: hp(2)),
-            InformationTitleCard(icon: LineIcons.question_circle, iconColor:CardColors.green, subTitle: 'What to do if you get the virus', title: 'What to do',),
-          ],
-        )
-      ),
+          padding: EdgeInsets.only(left: 20, right: 20, top: 5),
+          child: Column(
+            children: <Widget>[
+              InformationTitleCard(
+                icon: LineIcons.share_alt,
+                iconColor: Color(0xff001399),
+                subTitle: 'Learn how Covid-19 spread',
+                title: 'How it Spreads?',
+              ),
+              SizedBox(height: hp(2)),
+              InformationTitleCard(
+                icon: LineIcons.warning,
+                iconColor: Colors.orange,
+                subTitle: 'Learn Covid-19 symptoms',
+                title: 'Symptoms',
+              ),
+              SizedBox(height: hp(2)),
+              InformationTitleCard(
+                icon: LineIcons.heartbeat,
+                iconColor: CardColors.red,
+                subTitle: 'Learn Covid-19 treatments',
+                title: 'Prevention & treatment',
+              ),
+              SizedBox(height: hp(2)),
+              InformationTitleCard(
+                icon: LineIcons.question_circle,
+                iconColor: CardColors.green,
+                subTitle: 'What to do if you get the virus',
+                title: 'What to do',
+              ),
+              SizedBox(
+                height: 10,
+              )
+            ],
+          )),
     );
   }
 

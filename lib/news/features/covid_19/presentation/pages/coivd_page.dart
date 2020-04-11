@@ -31,12 +31,12 @@ class CovidPage extends StatelessWidget {
                 //* World Part
                 // _buildWorld(context),
 
-                Padding(
-                  padding: EdgeInsets.only(
-                    top: 10,
-                    bottom: 10,
-                  ),
-                ),
+                // Padding(
+                //   padding: EdgeInsets.only(
+                //     top: 10,
+                //     bottom: 10,
+                //   ),
+                // ),
 
                 //* SL Part
                 _buildSL(context),
@@ -132,7 +132,7 @@ class CovidPage extends StatelessWidget {
             'Update of a Country'.toUpperCase(),
             style: TextStyle(
               fontSize: 20,
-              color: Theme.of(context).primaryColor,
+              color: Colors.red,
               fontWeight: FontWeight.bold,
               letterSpacing: 1,
             ),

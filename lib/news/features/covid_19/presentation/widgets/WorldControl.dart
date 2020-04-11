@@ -30,7 +30,7 @@ class WorldControl extends StatelessWidget {
           ),
         ),
         RaisedButton(
-          color: Theme.of(context).accentColor,
+          color: Colors.red,
           child: Row(
             children: <Widget>[
               Icon(
@@ -44,7 +44,7 @@ class WorldControl extends StatelessWidget {
                 ),
               ),
               Text(
-                'Refresh'.toUpperCase(),
+                'Refresh',
                 style: TextStyle(letterSpacing: 1, color: Colors.white),
               ),
             ],
