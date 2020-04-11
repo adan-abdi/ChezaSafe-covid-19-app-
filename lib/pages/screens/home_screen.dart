@@ -10,6 +10,7 @@ import 'package:covid_tracker/news/injection_container.dart';
 // import 'package:covid_tracker/utils/margin.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:responsive_screen/responsive_screen.dart';
 // import 'package:flutter_spinkit/flutter_spinkit.dart';
 // import 'package:google_fonts/google_fonts.dart';
 // import 'package:responsive_screen/responsive_screen.dart';
@@ -39,8 +40,8 @@ class _HomeScreenState extends State<HomeScreen>
   Widget build(BuildContext context) {
     super.build(context);
 
-    // final Function wp = Screen(context).wp;
-    // final Function hp = Screen(context).hp;
+    final Function wp = Screen(context).wp;
+    final Function hp = Screen(context).hp;
     return SingleChildScrollView(
       padding: EdgeInsets.only(top: 20),
       child: _buildWorld(context),

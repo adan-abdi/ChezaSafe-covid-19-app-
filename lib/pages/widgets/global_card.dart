@@ -143,6 +143,7 @@ class GlobalSituationCard extends StatelessWidget {
             ],
           ),
         ),
+        // comment style tiny box
         Align(
           alignment: Alignment.bottomRight,
           child: Column(
@@ -166,21 +167,7 @@ class GlobalSituationCard extends StatelessWidget {
                         offset: Offset(0, 13)),
                   ],
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Icon(icon.icon, color: icon.color, size: 15),
-                    // Text(
-                    //   "${percentChange.round()}%",
-                    //   style: GoogleFonts.cabin(
-                    //     textStyle: TextStyle(
-                    //         color: color,
-                    //         fontWeight: FontWeight.w300,
-                    //         fontSize: 13),
-                    //   ),
-                    // ),
-                  ],
-                ),
+                child: Icon(icon.icon, color: icon.color, size: 15),
               ),
             ],
           ),
