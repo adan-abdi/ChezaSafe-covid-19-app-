@@ -1,8 +1,9 @@
+import 'package:covid_tracker/guides/screens/protection.dart';
+import 'package:covid_tracker/guides/screens/summary.dart';
+import 'package:covid_tracker/guides/screens/symptoms.dart';
+import 'package:covid_tracker/guides/utils/sidepanel.dart';
 import 'package:flutter/material.dart';
-import 'package:tracker_ui/screens/protection.dart';
-import 'package:tracker_ui/screens/summary.dart';
-import 'package:tracker_ui/screens/symptoms.dart';
-import 'package:tracker_ui/utils/sidepanel.dart';
+
 
 class MyHomePage extends StatefulWidget {
   @override

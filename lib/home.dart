@@ -1,16 +1,13 @@
+import 'package:covid_tracker/guides/guides.dart';
 import 'package:covid_tracker/news/features/covid_19/presentation/pages/coivd_page.dart';
 import 'package:covid_tracker/news/features/covid_19/presentation/widgets/app_bar_design.dart';
 import 'package:covid_tracker/pages/screens/home_screen.dart';
 import 'package:covid_tracker/theme/color/light_color.dart';
 import 'package:covid_tracker/utils/margin.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/scheduler.dart';
-// import 'package:flutter_bloc/flutter_bloc.dart';
-// import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
-// import 'blocs/blocs.dart';
-import 'pages/screens/information_screen.dart';
+
 
 
 
@@ -21,12 +18,6 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   int selectedIndex = 0;
-
-  // void addPostFrameCallback(FrameCallback callback) {
-  //   // Load data on widget load
-  //   print('relad?');
-  //   BlocProvider.of<CaseBloc>(context).add(FetchCase());
-  // }
 
   PageController pageController = PageController(
     initialPage: 0,
@@ -42,7 +33,7 @@ class _HomeState extends State<Home> {
       children: <Widget>[
         HomeScreen(),
         CovidPage(),
-        InformationScreen(),
+        MyHomePage(),
       ],
     );
   }
