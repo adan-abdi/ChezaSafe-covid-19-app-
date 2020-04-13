@@ -1,12 +1,3 @@
-/* {"country":"Sri Lanka",
-"cases":66,
-"todayCases":6,
-"deaths":0,
-"todayDeaths":0,
-"recovered":3,
-"active":63,
-"critical":0,
-"casesPerOneMillion":3}*/
 
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';

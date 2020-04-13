@@ -2,10 +2,6 @@
 import 'package:covid_tracker/news/features/covid_19/domain/entities/covid_all.dart';
 import 'package:flutter/material.dart';
 
-/* {"cases":250618,
-"deaths":10254,
-"recovered":89044,
-"updated":1584701849216}*/
 
 class CovidAllModel extends CovidAll {
   int _cases;

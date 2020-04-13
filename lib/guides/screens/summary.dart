@@ -1,5 +1,6 @@
+import 'package:covid_tracker/guides/utils/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:tracker_ui/utils/colors.dart';
+
 
 class Summary extends StatelessWidget {
   const Summary({
