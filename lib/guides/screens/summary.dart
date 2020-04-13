@@ -37,7 +37,7 @@ class Summary extends StatelessWidget {
               style: TextStyle(color: darkPrimaryColor.withOpacity(0.5)),
             ),
             SizedBox(height: 40),
-            Image.asset("assets/chart.png"),
+            Image.asset("assets/guides/chart.png"),
             SizedBox(height: 20),
             Text(
               "Covid-19 Cases",

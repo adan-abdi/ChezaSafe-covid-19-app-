@@ -33,7 +33,7 @@ class Symptoms extends StatelessWidget {
               style: TextStyle(color: darkPrimaryColor.withOpacity(0.5)),
             ),
             SizedBox(height: 40),
-            Image.asset("assets/illustration.png"),
+            Image.asset("assets/guides/illustration.png"),
             SizedBox(height: 20),
             Text(
               "What symptoms do you experience?",

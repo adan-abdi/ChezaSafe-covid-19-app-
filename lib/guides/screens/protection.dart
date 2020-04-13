@@ -37,7 +37,7 @@ class Protection extends StatelessWidget {
               style: TextStyle(color: darkPrimaryColor.withOpacity(0.5)),
             ),
             SizedBox(height: 40),
-            Image.asset("assets/icon-caugh.png"),
+            Image.asset("assets/guides/icon-caugh.png"),
             SizedBox(height: 20),
             Text(
               "Cover your cough",
@@ -53,7 +53,7 @@ class Protection extends StatelessWidget {
               style: TextStyle(color: darkPrimaryColor.withOpacity(0.5)),
             ),
             SizedBox(height: 40),
-            Image.asset("assets/icon-wash-hands.png"),
+            Image.asset("assets/guides/icon-wash-hands.png"),
             SizedBox(height: 20),
             Text(
               "Wash your hands",

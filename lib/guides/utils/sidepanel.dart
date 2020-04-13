@@ -102,7 +102,7 @@ class _SidePanelState extends State<SidePanel> {
                 },
               ),
             ),
-            Image.asset("assets/Bitmap Copy.png"),
+            Image.asset("assets/guides/Bitmap Copy.png"),
             SizedBox(height: 20)
           ],
         ),
